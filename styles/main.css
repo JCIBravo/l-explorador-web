@@ -1,0 +1,78 @@
+body {
+    background: #000000;
+    font-family: sans-serif;
+}
+
+a, a:hover, a:visited, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+.page {
+    padding: 0;
+    margin: 25px;
+}
+
+/* Título */
+table.tab {
+    height: 50px;
+    width: 100%;
+}
+
+table.tab tbody tr {
+    border: 1px solid #FFFFFF;
+}
+
+table.tab tbody tr td:nth-child(1) {
+    text-align: left;
+    padding-left: 25px;
+}
+
+table.tab tbody tr td:nth-child(3) {
+    text-align: right;
+    padding-right: 25px;
+}
+
+table.tab tbody tr td:nth-child(1),
+table.tab tbody tr td:nth-child(3) {
+    border: 1px solid #FFFFFF;
+    width: 15%;
+}
+
+table.tab tbody tr td:nth-child(2) {
+    font-size: 40px;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Imagenes (4 filas) */
+table.images {
+    height: 200px;
+    width: 100%;
+}
+
+table.images tbody tr {
+    border: 1px solid #FFFFFF;
+    width: 25%;
+    text-align: center;
+}
+
+table.images tbody tr:nth-child(1) td {
+    border: 1px solid #FFFFFF;
+    height: 150px;
+    text-align: center;
+    font-style: italic;
+}
+
+table.images tbody tr:nth-child(2) td {
+    border: 1px solid #FFFFFF;
+    height: 50px;
+    text-align: center;
+}

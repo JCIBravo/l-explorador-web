@@ -18,6 +18,18 @@ p {
 }
 
 /* Título */
+
+table.tabtitle {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.tabtitle tbody tr td {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bolder;
+}
+
 table.tab {
     background-color: red;
     height: 50px;
@@ -37,9 +49,11 @@ table.tab tbody tr td:nth-child(1) {
     text-align: left;
     padding-left: 25px;
 }
-table.tab tbody tr td img {
-    height: 150px;
-    width: auto;
+
+table.images tbody tr td img {
+    margin: 0 0 0 0;
+    width: 150px;
+    height: auto;
 }
 
 table.tab tbody tr td:nth-child(3) {
@@ -60,27 +74,102 @@ table.tab tbody tr td:nth-child(2) {
     font-weight: bold;
 }
 
-/* Imagenes (4 filas) */
-table.images {
-    height: 200px;
+table.tab tbody tr td:nth-child(1) a:hover,
+table.tab tbody tr td:nth-child(3) a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Imagenes (4 imágenes/fila) */
+div.gallery {
+    border: 2px solid #CCCCCC;
+}
+
+div.gallery:hover {
+    border: 2px solid #FF0000;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    background: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery:hover div.desc {
+    background: #FF0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 3px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer hr {
+    border: 2px solid #FF0000;
+}
+
+footer h1 {
+    color: #FF0000;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer h2 {
+    font-style: italic;
+    color: #FF0000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: initial;
     width: 100%;
 }
 
-table.images tbody tr {
-    border: 1px solid #FFFFFF;
-    width: 25%;
-    text-align: center;
+footer a {
+    color: #FF0000;
+    text-decoration: none;
 }
 
-table.images tbody tr:nth-child(1) td {
-    border: 1px solid #FFFFFF;
-    height: 150px;
-    text-align: center;
-    font-style: italic;
+footer a:hover {
+    color: #ff7575;
 }
 
-table.images tbody tr:nth-child(2) td {
-    border: 1px solid #FFFFFF;
-    height: 50px;
-    text-align: center;
+footer a:visited {
+    color: #ffc3c3;
 }
